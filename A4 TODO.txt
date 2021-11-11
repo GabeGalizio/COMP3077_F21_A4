@@ -1,0 +1,35 @@
+Please mark things as you finish them <3
+Also note I omitted q2; this is because it isn't so much a task as it is a reminder to use prefabs.
+So do that.
+Remember we are using Unity Ver 2020.3.18f1 !!
+
+//DONE BY: GABE, GIANNA
+1. [15 marks] Make a new 3D project and Git repository named with assignment number and group name.
+Be sure all group members are using Git and making commits in the spirit of collaborative source control.
+Add the markers and the instructor with Reporter level permission (GitLab) or Collaborator (GitHub).
+
+//DONE BY:
+3. [10 marks] Make a capsule character using the capsule primitive game object (or the weeble prefab, or
+your own capsule creation). Create and apply a textured material to your character. (You can reuse models
+from assignment 2).
+
+//DONE BY:
+4. [15 marks] Create a script call “MovePlayer” that uses a character controller to move the player. The
+player should be able to move forward, backward, side-to-side, turn, and jump.
+
+//DONE BY:
+5. [10 marks] Use the new input system.
+
+//DONE BY:
+6. [15 marks] Create a least 3 levels. Each level should have a start point and an end point. Create a splash
+screen, a main menu, and a completion scene. The main menu should contain at least a play and quit
+button. The play button starts the first level. Upon reaching the end of a level, load the next level. At the
+end of the last level, load the completion screen that contains statistics such as items collected, enemies
+defeated, etc. Populate the levels with interesting obstacles and collectables. If the player dies before
+reaching the end of the level, respawn at the start of the level.
+
+//DONE BY:
+7. [10 marks] Create a first person and third person camera and the ability to switch between them.
+
+//DON'T FORGET:
+8. [20 marks] Add other features (e.g., enemies, weapons, audio, etc.) to make your game awesome.
