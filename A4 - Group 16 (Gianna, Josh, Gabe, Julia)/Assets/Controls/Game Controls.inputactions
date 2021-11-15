@@ -1,0 +1,98 @@
+{
+    "name": "Game Controls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "88d8974f-2c68-4c94-bf9e-f379a80bfc0d",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "16ebaeed-aa47-42e3-94fe-b99be9cb941a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "85c2c81e-3a8f-415c-a479-56350f2c9057",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Turn",
+                    "type": "Button",
+                    "id": "c0433a55-c826-427b-b262-2e714bedff8a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "33ff64bb-eca8-4886-8269-01ccda5aa41b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "963e5d36-5a55-40c9-9ae2-46e3e04851b3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0120e76-83c1-4823-9ca4-e4c8ac605219",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Menus/UI",
+            "id": "48d08f1a-7709-4766-bbf1-ab114a806bfb",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "550e44da-f2ad-4b1d-9a30-5f28fff89c7c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "98074331-2686-4a7f-8eff-aa4d47555210",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
