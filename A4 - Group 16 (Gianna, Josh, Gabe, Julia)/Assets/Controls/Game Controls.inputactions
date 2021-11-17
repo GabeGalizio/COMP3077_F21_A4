@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "16ebaeed-aa47-42e3-94fe-b99be9cb941a",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -23,8 +23,16 @@
                 },
                 {
                     "name": "Turn",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c0433a55-c826-427b-b262-2e714bedff8a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchCamera",
+                    "type": "Button",
+                    "id": "d7c662e9-fda1-4017-8cc6-7019b1b3a2d2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -32,67 +40,129 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "33ff64bb-eca8-4886-8269-01ccda5aa41b",
-                    "path": "",
+                    "name": "2D Vector",
+                    "id": "c8e84364-6b0c-4f2f-a6cd-12d4122fa609",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "08fe8d51-93b4-452a-b7da-f231e2ccec98",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c8e217f5-3a0c-41ee-9535-556b2dfb987c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "46b29acd-ffe3-4b3a-a697-4cab56b1b443",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "54f0e2e4-7d46-4c2a-919e-c41b07cb6487",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
                     "id": "963e5d36-5a55-40c9-9ae2-46e3e04851b3",
-                    "path": "",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard Controls",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "d0120e76-83c1-4823-9ca4-e4c8ac605219",
-                    "path": "",
+                    "name": "1D Axis",
+                    "id": "1b4938c1-d1db-48aa-862c-d93b8cdd8af1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Turn",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f80f6cec-7565-4d2c-b737-3eac4ac3f708",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d87cc476-e32f-4820-beb8-49c8db52c9c4",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Turn",
                     "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Splash Screen",
-            "id": "2bb73808-bf9a-464a-be48-8d6b3f7834df",
-            "actions": [
-                {
-                    "name": "EnterPressed",
-                    "type": "Button",
-                    "id": "06b03f82-921d-4bcb-aa02-9412f116ff06",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
+                    "isPartOfComposite": true
+                },
                 {
                     "name": "",
-                    "id": "a159c262-b134-4dc4-8608-0d1b8f29d932",
-                    "path": "<Keyboard>/enter",
+                    "id": "9f26ebdf-c294-441a-af44-fdaeab4a9063",
+                    "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "EnterPressed",
+                    "groups": "Keyboard Controls",
+                    "action": "SwitchCamera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keyboard Controls",
+            "bindingGroup": "Keyboard Controls",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
