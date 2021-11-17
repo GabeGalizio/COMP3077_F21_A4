@@ -15,10 +15,13 @@ public class MovePlayer : MonoBehaviour
     float rotation;
     Vector3 rotationVelocity;
     private int jump_count = 0;
+    public Transform camera;
+    private bool thirdtoggle = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        camera = transform.Find("Main Camera");
         player_Rigid = GetComponent<Rigidbody>();
         movementVector = new Vector3(0, 0, 0);
         rotationVelocity = new Vector3(0, 0, 0);
@@ -33,6 +36,23 @@ public class MovePlayer : MonoBehaviour
         }
     }
 
+    void OnSwitchCamera()
+    {
+        Debug.Log(thirdtoggle);
+        if (thirdtoggle)
+        {
+            thirdtoggle = false;
+            camera.localPosition = (new Vector3(0f,0f,0f));
+            camera.Rotate(new Vector3(-25,0,0));
+        }
+        else
+        { 
+            thirdtoggle = true;
+            camera.localPosition = (new Vector3(0f,2f,-2f));
+            camera.Rotate(new Vector3(25,0,0));
+        }
+    }
+    
     //Action to do upon movement (WSAD input)
     void OnMove(InputValue value) {
         direction = value.Get<Vector2>();
@@ -61,5 +81,6 @@ public class MovePlayer : MonoBehaviour
                 jump_count = 0;
             }
         }
-    }  
+    }
+    
 }
