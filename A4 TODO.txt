@@ -20,7 +20,7 @@ player should be able to move forward, backward, side-to-side, turn, and jump.
 //DONE BY:
 5. [10 marks] Use the new input system.
 
-//DONE BY:
+//DONE BY: GABE
 6. [15 marks] Create a least 3 levels. Each level should have a start point and an end point. Create a splash
 screen, a main menu, and a completion scene. The main menu should contain at least a play and quit
 button. The play button starts the first level. Upon reaching the end of a level, load the next level. At the
