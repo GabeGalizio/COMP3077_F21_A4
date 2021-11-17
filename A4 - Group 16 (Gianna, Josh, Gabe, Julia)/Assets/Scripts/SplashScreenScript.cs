@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class SplashScreenScript : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class SplashScreenScript : MonoBehaviour {
     public AudioSource audio;
 
     void Update() {
-        if(Input.anyKey) {
+        if (Keyboard.current.anyKey.wasPressedThisFrame) {
             audio.PlayOneShot(pressSFX, 0.7f);
             StartCoroutine(SceneTransition(delay));
         }
