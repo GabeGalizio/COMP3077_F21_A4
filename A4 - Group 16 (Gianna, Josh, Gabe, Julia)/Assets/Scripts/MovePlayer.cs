@@ -58,6 +58,8 @@ public class MovePlayer : MonoBehaviour
         direction = value.Get<Vector2>();
         movementVector.x = direction.x * player_Velo;
         movementVector.z = direction.y * player_Velo;
+        movementVector = Quaternion.AngleAxis(transform.eulerAngles.y,Vector3.up) * movementVector;
+        Debug.Log(transform.eulerAngles.y);
     }
 
     //Action to do upon turning (Arrow key L/R input)
