@@ -7,6 +7,8 @@ using UnityEngine;
 public class DeathZoneTrigger : MonoBehaviour {
     private Vector3 spawnPosn;
     private Quaternion spawnRotation;
+    public AudioClip deathSFX;
+    public AudioSource audio;
 
     //Get initial player posn for this scene.
     void Awake() {
@@ -16,6 +18,7 @@ public class DeathZoneTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.name.Equals("Player")) { //Verify colliding object is player
+            audio.PlayOneShot(deathSFX, 0.7f);
             other.gameObject.transform.position = spawnPosn;
             other.gameObject.transform.rotation = spawnRotation;
         }
