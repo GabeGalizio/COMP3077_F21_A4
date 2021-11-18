@@ -48,7 +48,7 @@ public class MovePlayer : MonoBehaviour
         else
         { 
             thirdtoggle = true;
-            camera.localPosition = (new Vector3(0f,2f,-2f));
+            camera.localPosition = (new Vector3(0f,3f,-3f));
             camera.Rotate(new Vector3(25,0,0));
         }
     }
