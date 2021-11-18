@@ -99,7 +99,7 @@ MonoBehaviour:
   CollectibleType: 0
   rotate: 1
   rotationSpeed: 10
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 36db87246f479e849b7704d0d731eb87, type: 3}
   collectEffect: {fileID: 1702657300312902, guid: 1b8f90b19c32cf146a8544aae6722897, type: 3}
   newX: 30
   newY: 15
@@ -111,7 +111,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516206009078322}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
